@@ -1,0 +1,41 @@
+.MainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background: var(--background-main);
+}
+
+.FormDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+    background: var(--header-background);
+}
+
+.FormInput {
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    color: #555;
+    border: 2px solid var(--text-color);
+    padding: 10px;
+    font-size: 21px;
+    position: relative;
+    text-align: center;
+}
+
+
+.FormInput:focus {
+    outline: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.FormBtn {
+    margin-left: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 20px;
+    position: relative;
+    overflow: hidden;
+}

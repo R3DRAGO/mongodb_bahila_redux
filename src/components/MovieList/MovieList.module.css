@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+.BgMovies {
+    padding-top: 20px;
+}
+
+.Movies {
+    display: flex;
+    flex-flow: wrap;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.Pagination {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 18px;
+}
+
+

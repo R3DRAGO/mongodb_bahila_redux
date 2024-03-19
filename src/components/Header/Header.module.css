@@ -1,0 +1,69 @@
+.Header {
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.Theme {
+    margin-right: 30px;
+}
+
+
+.Avatar {
+    margin-right: 30px;
+}
+
+.Header span {
+    font-size: 20px;
+}
+
+
+a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* Додаємо плавну анімацію */
+    text-decoration: none;
+    color: #1fa725;
+}
+
+a:hover {
+    transform: scale(1.2); /* Збільшуємо розмір при наведенні */
+}
+
+a:not(:hover) {
+    transform: scale(1); /* Повертаємо до звичайного розміру при знятті курсору */
+}
+
+.HeaderLink {
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--text-color);
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--text-color);
+}
+
+.HeaderLink:hover {
+    color: var(--header-background);
+    box-shadow: inset 0 -100px 0 0 var(--text-color);
+}
+
+.Header a[class='active'] {
+    border: 2px solid var(--text-color);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
