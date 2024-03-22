@@ -1,4 +1,5 @@
 import {configureStore} from "@reduxjs/toolkit";
+
 import {genresReducer, movieReducer} from "./slices";
 
 
@@ -8,7 +9,6 @@ const store = configureStore({
         genres: genresReducer
     }
 });
-
 
 
 export {store}

@@ -88,9 +88,9 @@ const MovieDetails: FC<IProps> = ({id}) => {
                             <h3>Rating</h3>
                         </div>
                         <div>
-                           <ReactStars count={5} value={movie.vote_average / 2} size={40}
-                               edit={false}
-                               color2={'#ffd700'}/>
+                            <ReactStars count={5} value={movie.vote_average / 2} size={40}
+                                        edit={false}
+                                        color2={'#ffd700'}/>
                         </div>
                     </div>
                     <div className={css.Description}>
@@ -98,7 +98,7 @@ const MovieDetails: FC<IProps> = ({id}) => {
                             <h3>Description:</h3>
                         </div>
                         <div>
-                        <p>{movie.overview}</p>
+                            <p>{movie.overview}</p>
                         </div>
                     </div>
                 </>

@@ -27,11 +27,12 @@ a {
     display: inline-block;
     transition: transform 0.3s ease-in-out; /* Додаємо плавну анімацію */
     text-decoration: none;
-    color: #1fa725;
+    color: #14951a;
 }
 
 a:hover {
     transform: scale(1.2); /* Збільшуємо розмір при наведенні */
+    color: #46d020;
 }
 
 a:not(:hover) {

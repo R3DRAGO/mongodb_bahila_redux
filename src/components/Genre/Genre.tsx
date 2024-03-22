@@ -15,7 +15,7 @@ const Genre: FC<IProps> = ({genre: {id, name}}) => {
     };
     return (
         <div className={css.Genre} onClick={handleCardClick}>
-            <div>{name}</div>
+            <div className={css.Genre_data}>{name}</div>
         </div>
     );
 };

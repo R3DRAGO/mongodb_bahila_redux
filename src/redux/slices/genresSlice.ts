@@ -18,9 +18,9 @@ const initialState: GenresState = {
 
 const getAll = createAsyncThunk(
     'genresSlice/getAll',
-    async (_, { rejectWithValue }) => {
+    async (_, {rejectWithValue}) => {
         try {
-            const { data: { genres } } = await genresService.getAll();
+            const {data: {genres}} = await genresService.getAll();
             return genres;
         } catch (e: any) {
             if (e.response) {
@@ -34,7 +34,7 @@ const getAll = createAsyncThunk(
 
 const getById = createAsyncThunk(
     'genresSlice/getById',
-    async ({id, page}: {id: number, page: number}, {rejectWithValue}) => {
+    async ({id, page}: { id: number, page: number }, {rejectWithValue}) => {
         try {
             const response = await genresService.getById(id, page);
             const responseData = response as AxiosResponse<IMovie>;
@@ -66,7 +66,7 @@ const genresSlice = createSlice({
 });
 
 
-const { reducer: genresReducer } = genresSlice;
+const {reducer: genresReducer} = genresSlice;
 
 const genresAction = {
     getAll,

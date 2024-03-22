@@ -1,3 +1,16 @@
 .Genre{
     font-size: 20px;
 }
+
+.Genre_data{
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.Genre_data:hover {
+    transform: scale(1.1);
+}
+
+.Genre_data span {
+    transform: scale(0.909)
+}

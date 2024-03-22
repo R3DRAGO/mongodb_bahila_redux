@@ -7,7 +7,6 @@ import {Pagination} from "../Pagination";
 import {MovieListCard} from "../MovieListCard";
 import css from "./SelectedGenres.module.css";
 import {genresService} from "../../services";
-import {Stack} from "@mui/material";
 
 interface IProps {
     id: string
