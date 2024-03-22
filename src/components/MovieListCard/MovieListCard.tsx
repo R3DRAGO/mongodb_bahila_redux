@@ -23,8 +23,9 @@ const MovieListCard: FC<IProps> = ({movie}) => {
             <div className={css.Card}>
                 <div className={css.Title}><h1>{title}</h1></div>
                 <img src={`${urls.poster}${poster_path}`} alt={`${title}`}/>
-                <div className={css.Stars}><ReactStars count={5} value={vote_average / 2} size={35} edit={false}
-                                                       color2={'#ffd700'}/></div>
+                <div className={css.Stars}>
+                    <ReactStars count={5} value={vote_average / 2} size={35} edit={false} color2={'#ffd700'}/>
+                </div>
             </div>
         </div>
     );

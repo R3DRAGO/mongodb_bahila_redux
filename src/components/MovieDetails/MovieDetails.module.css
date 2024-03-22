@@ -8,7 +8,7 @@
 
 .Main img {
     margin-top: 2vw;
-    width: 35vw;
+    width: 30vw;
     height: 80vh;
 }
 
@@ -89,8 +89,9 @@
     margin: 0;
     width: 9vw;
     height: 4vh;
-    top: -37vw;
-    right: -30vw;
+    top: -36vw;
+    right: -26vw;
+    gap: 3px;
     justify-content: center;
     align-items: center;
 }
