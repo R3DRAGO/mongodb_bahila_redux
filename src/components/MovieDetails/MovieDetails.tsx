@@ -1,6 +1,7 @@
 import {FC, useEffect, useState} from 'react';
-import {Badge, Rating, Typography} from "@mui/material";
+import {Badge, Typography} from "@mui/material";
 import {Link} from 'react-router-dom';
+import ReactStars from 'react-stars'
 
 import {moviesService} from "../../services";
 import {IResult} from "../../interfaces";
@@ -87,7 +88,9 @@ const MovieDetails: FC<IProps> = ({id}) => {
                             <h3>Rating</h3>
                         </div>
                         <div>
-                            <Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly />
+                           <ReactStars count={5} value={movie.vote_average / 2} size={40}
+                               edit={false}
+                               color2={'#ffd700'}/>
                         </div>
                     </div>
                     <div className={css.Description}>
@@ -95,7 +98,7 @@ const MovieDetails: FC<IProps> = ({id}) => {
                             <h3>Description:</h3>
                         </div>
                         <div>
-                            <p>{movie.overview}</p>
+                        <p>{movie.overview}</p>
                         </div>
                     </div>
                 </>

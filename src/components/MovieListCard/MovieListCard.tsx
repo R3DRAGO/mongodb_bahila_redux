@@ -1,10 +1,10 @@
 import {FC} from 'react';
 import {useNavigate} from "react-router-dom";
+import ReactStars from 'react-stars'
 
 import {IResult} from "../../interfaces";
 import css from "./MovieListCard.module.css";
 import {urls} from "../../constants";
-import {Rating} from "@mui/material";
 
 interface IProps {
     movie: IResult
@@ -23,7 +23,8 @@ const MovieListCard: FC<IProps> = ({movie}) => {
             <div className={css.Card}>
                 <div className={css.Title}><h1>{title}</h1></div>
                 <img src={`${urls.poster}${poster_path}`} alt={`${title}`}/>
-                <div className={css.Stars}><Rating name="half-rating-read" defaultValue={2.5} precision={0.5} readOnly /></div>
+                <div className={css.Stars}><ReactStars count={5} value={vote_average / 2} size={35} edit={false}
+                                                       color2={'#ffd700'}/></div>
             </div>
         </div>
     );

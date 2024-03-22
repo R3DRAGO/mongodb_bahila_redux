@@ -1,11 +1,13 @@
 import {FC, useEffect, useState} from 'react';
 import {useSearchParams} from "react-router-dom";
 
-import {genresService} from "../../services/genresService";
+
 import {IResult} from "../../interfaces";
 import {Pagination} from "../Pagination";
 import {MovieListCard} from "../MovieListCard";
 import css from "./SelectedGenres.module.css";
+import {genresService} from "../../services";
+import {Stack} from "@mui/material";
 
 interface IProps {
     id: string
@@ -20,7 +22,7 @@ const SelectedGenres: FC<IProps> = ({id}) => {
             setMovies(data.results)
             console.log(data)
         })
-    }, [id, page]);
+    }, [id, page, query]);
     return (
         <div className={css.Main}>
             {movies && movies.map(movie => <MovieListCard key={movie.id} movie={movie}/>)}
